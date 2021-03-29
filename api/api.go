@@ -3,7 +3,7 @@ package api
 import (
 	"encoding/json"
 
-	"github.com/asuleymanov/steem-go/transports"
+	"github.com/klyed/hive-go/transports"
 )
 
 //API plug-in structure

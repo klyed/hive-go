@@ -3,7 +3,7 @@ package types
 import (
 	"encoding/json"
 
-	"github.com/asuleymanov/steem-go/encoding/transaction"
+	"github.com/klyed/hive-go/encoding/transaction"
 )
 
 //CommentOptionsOperation represents comment_options operation data.
@@ -16,7 +16,7 @@ type CommentOptionsOperation struct {
 	Author               string        `json:"author"`
 	Permlink             string        `json:"permlink"`
 	MaxAcceptedPayout    *Asset        `json:"max_accepted_payout"`
-	PercentSteemDollars  uint16        `json:"percent_steem_dollars"`
+	PercentHiveDollars  uint16        `json:"percent_hive_dollars"`
 	AllowVotes           bool          `json:"allow_votes"`
 	AllowCurationRewards bool          `json:"allow_curation_rewards"`
 	Extensions           []interface{} `json:"extensions"`
@@ -39,7 +39,7 @@ func (op *CommentOptionsOperation) MarshalTransaction(encoder *transaction.Encod
 	enc.Encode(op.Author)
 	enc.Encode(op.Permlink)
 	enc.Encode(op.MaxAcceptedPayout)
-	enc.Encode(op.PercentSteemDollars)
+	enc.Encode(op.PercentHiveDollars)
 	enc.EncodeBool(op.AllowVotes)
 	enc.EncodeBool(op.AllowCurationRewards)
 	if len(op.Extensions) > 0 {

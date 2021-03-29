@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/asuleymanov/steem-go/encoding/transaction"
+	"github.com/klyed/hive-go/encoding/transaction"
 )
 
 //AccountUpdateOperation represents account_update operation data.

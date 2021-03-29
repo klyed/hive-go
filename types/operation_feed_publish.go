@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/asuleymanov/steem-go/encoding/transaction"
+	"github.com/klyed/hive-go/encoding/transaction"
 )
 
 //FeedPublishOperation represents feed_publish operation data.

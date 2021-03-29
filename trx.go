@@ -3,9 +3,9 @@ package client
 import (
 	"time"
 
-	"github.com/asuleymanov/steem-go/api"
-	"github.com/asuleymanov/steem-go/transactions"
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/klyed/hive-go/api"
+	"github.com/klyed/hive-go/transactions"
+	"github.com/klyed/hive-go/types"
 )
 
 //BResp of response when sending a transaction.
@@ -17,7 +17,7 @@ type BResp struct {
 	JSONTrx  string
 }
 
-//SendTrx generates and sends an array of transactions to STEEM.
+//SendTrx generates and sends an array of transactions to HIVE.
 func (client *Client) SendTrx(username string, strx []types.Operation) (*BResp, error) {
 	var bresp BResp
 

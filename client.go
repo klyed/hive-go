@@ -3,10 +3,10 @@ package client
 import (
 	"net/url"
 
-	"github.com/asuleymanov/steem-go/api"
-	"github.com/asuleymanov/steem-go/transports"
-	"github.com/asuleymanov/steem-go/transports/http"
-	"github.com/asuleymanov/steem-go/transports/websocket"
+	"github.com/klyed/hive-go/api"
+	"github.com/klyed/hive-go/transports"
+	"github.com/klyed/hive-go/transports/http"
+	"github.com/klyed/hive-go/transports/websocket"
 	"github.com/pkg/errors"
 )
 
@@ -14,8 +14,8 @@ var (
 	ErrInitializeTransport = errors.New("Failed to initialize transport.")
 )
 
-// Client can be used to access STEEM remote APIs.
-// There is a public field for every STEEM API available,
+// Client can be used to access HIVE remote APIs.
+// There is a public field for every HIVE API available,
 // e.g. Client.Database corresponds to database_api.
 type Client struct {
 	cc transports.CallCloser

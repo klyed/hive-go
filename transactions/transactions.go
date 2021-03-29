@@ -7,7 +7,7 @@ import (
 	"encoding/hex"
 
 	// RPC
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/klyed/hive-go/types"
 
 	// Vendor
 	"github.com/pkg/errors"

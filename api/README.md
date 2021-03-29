@@ -1,6 +1,6 @@
 # API
 
-This package adds support for `steem api`.
+This package adds support for `hive api`.
 
 ## State
 

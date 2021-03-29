@@ -1,14 +1,14 @@
-# asuleymanov/steem-go
+# klyed/hive-go
 
-[![GoDoc](https://godoc.org/github.com/asuleymanov/steem-go?status.svg)](https://godoc.org/github.com/asuleymanov/steem-go)
-[![Go Report Card](https://goreportcard.com/badge/github.com/asuleymanov/steem-go)](https://goreportcard.com/report/github.com/asuleymanov/steem-go)
+[![GoDoc](https://godoc.org/github.com/klyed/hive-go?status.svg)](https://godoc.org/github.com/klyed/hive-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/klyed/hive-go)](https://goreportcard.com/report/github.com/klyed/hive-go)
 
 Golang RPC client library for [Steem](https://steemit.com).
 
 ## Usage
 
 ```go
-import "github.com/asuleymanov/steem-go"
+import "github.com/klyed/hive-go"
 ```
 
 
@@ -20,7 +20,7 @@ for more complete and ready to use examples.
 ```go
 	cls,_ := client.NewClient([]string{"ws://localhost:8090"},"steem")
 	defer cls.Close()
-	
+
 	// Get config.
 	log.Println("---> GetConfig()")
 	config, err := cls.Database.GetConfig()

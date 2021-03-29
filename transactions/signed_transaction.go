@@ -10,8 +10,8 @@ import (
 	"time"
 
 	// RPC
-	"github.com/asuleymanov/steem-go/encoding/transaction"
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/klyed/hive-go/encoding/transaction"
+	"github.com/klyed/hive-go/types"
 
 	// Vendor
 	"github.com/pkg/errors"

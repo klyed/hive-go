@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/klyed/hive-go/types"
 )
 
 //network_broadcast_api

@@ -3,8 +3,8 @@ package client
 import (
 	"strconv"
 
-	"github.com/asuleymanov/steem-go/transactions"
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/klyed/hive-go/transactions"
+	"github.com/klyed/hive-go/types"
 )
 
 //SetAsset returns data of type Asset

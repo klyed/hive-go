@@ -3,7 +3,7 @@ package types
 import (
 	"time"
 
-	"github.com/asuleymanov/steem-go/encoding/transaction"
+	"github.com/klyed/hive-go/encoding/transaction"
 )
 
 const layout = `"2006-01-02T15:04:05"`

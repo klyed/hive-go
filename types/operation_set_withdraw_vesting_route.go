@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/asuleymanov/steem-go/encoding/transaction"
+	"github.com/klyed/hive-go/encoding/transaction"
 )
 
 //SetWithdrawVestingRouteOperation represents set_withdraw_vesting_route operation data.

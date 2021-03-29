@@ -11,7 +11,7 @@ import (
 
 	"time"
 
-	"github.com/asuleymanov/steem-go/types"
+	"github.com/klyed/hive-go/types"
 	"github.com/pkg/errors"
 )
 
