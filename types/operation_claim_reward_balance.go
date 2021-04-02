@@ -7,8 +7,8 @@ import (
 //ClaimRewardBalanceOperation represents claim_reward_balance operation data.
 type ClaimRewardBalanceOperation struct {
 	Account     string `json:"account"`
-	RewardSteem *Asset `json:"reward_steem"`
-	RewardSbd   *Asset `json:"reward_sbd"`
+	RewardHive  *Asset `json:"reward_hive"`
+	RewardHbd   *Asset `json:"reward_hbd"`
 	RewardVests *Asset `json:"reward_vests"`
 }
 
@@ -27,8 +27,8 @@ func (op *ClaimRewardBalanceOperation) MarshalTransaction(encoder *transaction.E
 	enc := transaction.NewRollingEncoder(encoder)
 	enc.EncodeUVarint(uint64(TypeClaimRewardBalance.Code()))
 	enc.Encode(op.Account)
-	enc.Encode(op.RewardSteem)
-	enc.Encode(op.RewardSbd)
+	enc.Encode(op.RewardHive)
+	enc.Encode(op.RewardHbd)
 	enc.Encode(op.RewardVests)
 	return enc.Err()
 }

@@ -4,8 +4,8 @@ package types
 type AuthorRewardOperation struct {
 	Author        string `json:"author"`
 	Permlink      string `json:"permlink"`
-	SbdPayout     *Asset `json:"sbd_payout"`
-	SteemPayout   *Asset `json:"steem_payout"`
+	HbdPayout     *Asset `json:"hbd_payout"`
+	HivePayout    *Asset `json:"hive_payout"`
 	VestingPayout *Asset `json:"vesting_payout"`
 }
 

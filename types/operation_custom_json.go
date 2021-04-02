@@ -22,7 +22,7 @@ var (
 	TypeHiveSmartChain = "hsc"
 )
 
-// FC_REFLECT( steemit::chain::custom_json_operation,
+// FC_REFLECT( hive::chain::custom_json_operation,
 //             (required_auths)
 //             (required_posting_auths)
 //             (id)
@@ -183,7 +183,7 @@ func MarshalCustomJSON(v interface{}) (string, error) {
 		  tmp = append(tmp, TypeSplinterLand)
 		}
 	}
-	
+
 	tmp = append(tmp, v)
 
 	b, err := json.Marshal(tmp)

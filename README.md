@@ -3,7 +3,7 @@
 [![GoDoc](https://godoc.org/github.com/klyed/hive-go?status.svg)](https://godoc.org/github.com/klyed/hive-go)
 [![Go Report Card](https://goreportcard.com/badge/github.com/klyed/hive-go)](https://goreportcard.com/report/github.com/klyed/hive-go)
 
-Golang RPC client library for [Steem](https://steemit.com).
+Golang RPC client library for [Hive](https://hive.io).
 
 ## Usage
 
@@ -15,10 +15,10 @@ import "github.com/klyed/hive-go"
 ## Example
 
 This is just a code snippet. Please check the `examples` directory
-for more complete and ready to use examples.
+for more complete and ready to use examples. lol jk, there is no example folder.
 
 ```go
-	cls,_ := client.NewClient([]string{"ws://localhost:8090"},"steem")
+	cls,_ := client.NewClient([]string{"ws://localhost:8090"},"hive")
 	defer cls.Close()
 
 	// Get config.
@@ -67,7 +67,7 @@ for more complete and ready to use examples.
 			lastBlock++
 		}
 
-		// Sleep for STEEMIT_BLOCK_INTERVAL seconds before the next iteration.
+		// Sleep for Hive_BLOCK_INTERVAL seconds before the next iteration.
 		time.Sleep(time.Duration(config.BlockInterval) * time.Second)
 	}
 ```
@@ -79,7 +79,7 @@ You need to create a `Client` object to be able to do anything.
 Then you just need to call `NewClient()`.
 
 Once you create a `Client` object, you can start calling the methods exported
-via `steemd`'s RPC endpoint by invoking associated methods on the client object.
+via `hived`'s RPC endpoint by invoking associated methods on the client object.
 There are multiple APIs that can be exported, e.g. `database_api` and `login_api`,
 so the methods on the Client object are also namespaced accoding to these APIs.
 For example, to call `get_block` from `database_api`, you need to use
