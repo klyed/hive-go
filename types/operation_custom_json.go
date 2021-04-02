@@ -77,7 +77,7 @@ type PrivateMessageOperation struct {
 }
 
 //SplinterLandOperation the structure for the operation CustomJSONOperation.
-type SplinterLandOperation{}. struct {
+type SplinterLandOperation struct {
 	Follower  string   `json:"follower"`
 	Following string   `json:"following"`
 	What      []string `json:"what"`
