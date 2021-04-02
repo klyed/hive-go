@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"io"
 	"reflect"
-	"fmt"
+	//"fmt"
 	"strings"
 
 	"github.com/klyed/hive-go/encoding/transaction"
@@ -90,6 +90,7 @@ type HiveEngineOperation struct {
 	Action    string   `json:"contractAction"`
 	Payload   []string `json:"contractPalyload"`
 }
+
 
 //HiveSmartChainOperation the structure for the operation CustomJSONOperation.
 type HiveSmartChainOperation struct {
